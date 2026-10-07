@@ -1,7 +1,7 @@
 <?php
 
 $conexao = mysqli_connect(
-    "localhost",
+    "localhost:3307",
     "root",
     "root",
     "biblioteca"
