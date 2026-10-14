@@ -47,7 +47,7 @@ $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
 // INSERÇÃO NO BANCO (CREATE DO CRUD)
 //=============================================================
 
-$sql = "INSERT INTO usuários (nome, email, senha) VALUES
+$sql = "INSERT INTO usuarios (nome, email, senha) VALUES
 ('$nome', '$email', '$senhaCriptografada')";
 
 // Executa o INSERT no banco de dados

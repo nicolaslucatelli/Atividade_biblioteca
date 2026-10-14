@@ -2,7 +2,7 @@
 
 
 //inclui a verificacão de sesão (protege a pagina de acesso não autorizada)
-include ("verificar_sesao.php");
+include ("verificar_sessao.php");
 
 
 ?>
@@ -15,7 +15,7 @@ include ("verificar_sesao.php");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="conteiner">
+    <div class="container">
     <!--   // exibe o nome do usuario logado (vem da sesão $_session) -->
        <h1>Olá, <?php echo $_SESSION['nome']; ?>!</h1>
        <p class="subtitulo">Bem-vindo ao painel da biblioteca!,Escolha uma opção abaixo:</p>
