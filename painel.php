@@ -24,7 +24,7 @@ include ("verificar_sessao.php");
 
 
         </a>
-        <a href="listar_livros.php" class="card-link">Listar livros</a>
+        <a href="listar_livro.php" class="card-link">Listar livros</a>
         <a href="logout.php" class="card-link">Sair</a>
        </div>
        <div class="dica-navegacao">
