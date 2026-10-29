@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,7 @@
 
             <div class="form-group">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"r required>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" r required>
             </div>
 
             <button type="submit" class="btn btn-block">Entrar</button>
@@ -38,6 +39,7 @@
         <div class="dica-navegacao">
             <strong>Fluxo:</strong> Login → Painel → Cadastrar ou Listar Livros
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>

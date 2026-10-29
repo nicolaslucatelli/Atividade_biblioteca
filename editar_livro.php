@@ -20,10 +20,12 @@ $livro = mysqli_fetch_assoc($resultado);
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Livro - Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -46,13 +48,17 @@ $livro = mysqli_fetch_assoc($resultado);
 
             <label for="status">Status:</label>
             <select id="status" name="status" required>
-                <option value="disponível" <?php if ($livro['status'] == 'disponível') echo 'selected'; ?>>Disponível</option>
-                <option value="indisponível" <?php if ($livro['status'] == 'indisponível') echo 'selected'; ?>>Indisponível</option>
+                <option value="disponível" <?php if ($livro['status'] == 'disponível')
+                    echo 'selected'; ?>>Disponível
+                </option>
+                <option value="emprestado" <?php if ($livro['status'] == 'emprestado')
+                    echo 'selected'; ?>>
+                    Emprestado</option>
             </select>
-
-            <button type="submit">Salvar</button>
+            <button type="submit" class="btn btn-block">Atualizar Livro</button>
         </form>
-    </div>    
+        <a href="listar_livro.php" class="btn btn-voltar">Voltar para a listagem</a>
+    </div>
 </body>
 
 </html>

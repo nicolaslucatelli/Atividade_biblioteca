@@ -18,7 +18,7 @@ header("Expires: 0");
 // Verifica se a variável de sessão 'nome' existe.
 // Se não existir, o usuário não está logado.
 
-if(!isset($_SESSION['nome'])) {
+if (!isset($_SESSION['nome'])) {
     // header() redireciona o navegador para outra página.
     header("Location: login.php");
     // exit() encerra o script para garantir que nada mais

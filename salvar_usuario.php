@@ -27,7 +27,7 @@ $resultadoVerificar = mysqli_query($conexao, $sqlVerificar);
 // Validação: mysqli_num_rows() conta quantos registros
 // foram encontrados
 
-if(mysqli_num_rows($resultadoVerificar) > 0){
+if (mysqli_num_rows($resultadoVerificar) > 0) {
     // Se o email já existe, redireciona de volta ao cadastro
     // com mensagem de erro
     header("Location: cadastro.php?erro=email");
